@@ -1,4 +1,4 @@
-package sfgpetclinic.controllers;
+package com.pozarycki.sfgpetclinic.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

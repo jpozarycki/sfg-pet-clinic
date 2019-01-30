@@ -1,14 +1,24 @@
 package com.pozarycki.sfgpetclinic.services.map;
 
-import com.pozarycki.sfgpetclinic.model.Owner;
-import com.pozarycki.sfgpetclinic.services.CrudService;
+import com.pozarycki.sfgpetclinic.model.Pet;
+import com.pozarycki.sfgpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetMapService extends AbstractMapService<Owner, Long> implements CrudService<Owner,Long> {
+public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
     @Override
-    public Set<Owner> findAll() {
+    public Set<Pet> findAll() {
         return super.findAll();
+    }
+
+    @Override
+    public Pet findById(Long id) {
+        return super.findById(id);
+    }
+
+    @Override
+    public void delete(Pet object) {
+        super.delete(object);
     }
 
     @Override
@@ -17,18 +27,8 @@ public class PetMapService extends AbstractMapService<Owner, Long> implements Cr
     }
 
     @Override
-    public void delete(Owner object) {
-        super.delete(object);
-    }
-
-    @Override
-    public Owner save(Owner object) {
-        return super.save(object.getId(), object);
-    }
-
-    @Override
-    public Owner findById(Long id) {
-        return super.findById(id);
+    public Pet save(Pet object) {
+        return super.save(object.getId(),object);
     }
 }
 

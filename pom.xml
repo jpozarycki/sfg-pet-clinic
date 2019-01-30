@@ -22,7 +22,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <start-class>com.pozarycki.sfgpetclinic.SfgPetClinicApplication</start-class>
+        <start-class>com.pozarycki.SfgPetClinicApplication</start-class>
     </properties>
 
     <build>
