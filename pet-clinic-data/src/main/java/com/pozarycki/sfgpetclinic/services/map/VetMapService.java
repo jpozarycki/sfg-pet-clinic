@@ -2,8 +2,10 @@ package com.pozarycki.sfgpetclinic.services.map;
 
 import com.pozarycki.sfgpetclinic.model.Vet;
 import com.pozarycki.sfgpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
+@Service
 
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
