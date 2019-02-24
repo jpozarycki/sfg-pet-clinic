@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
 import java.util.List;
 
-@RequestMapping({"/owners"})
+@RequestMapping("/owners")
 @Controller
 public class OwnerController {
 
